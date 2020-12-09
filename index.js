@@ -3,11 +3,15 @@ $(function () {
 // Elément du menu
     let $mainMenuItems = $("#main-menu ul").children("li"), //sélection de tous les éléments li
         totalMainMenuItems = $mainMenuItems.length, //nombre d'éléments li
-        openedIndex = -1, //index de départ pour que tous les menus soient fermés
+        openedIndex = 2, //index de départ pour que tous les menus soient fermés
 
         //Passage de l'image colorée sur l'image bw au moment du click
         init = function () {
             bindEvents()
+
+            if(validIndex(openedIndex)){
+                animateItem($mainMenuItems.eq(openedIndex), true, 500)
+            }
         };
 
         //Fonction relatif à l'évènement du click
