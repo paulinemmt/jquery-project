@@ -37,11 +37,17 @@ header h1{
     padding-top: 148px;
 }
 
-/* #main-menu ul li{
-
-} */
+#main-menu ul li{
+    float: left;
+    width: 140px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
 
 .bw{
+    position: absolute;
+    left: 0px;
     width: 140px;
     height: 500px;
     cursor: pointer;
@@ -50,6 +56,8 @@ header h1{
 }
 
 .color{
+    position: absolute;
+    left: 140px;
     width: 140px;
     height: 500px;
     cursor: pointer;
@@ -72,6 +80,8 @@ header h1{
 
 /* Description */
 .description{
+    position: absolute;
+    left: 140px;
     width: 240px;
     height: 460px;
     padding: 20px;
